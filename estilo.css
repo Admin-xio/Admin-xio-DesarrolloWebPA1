@@ -1,0 +1,264 @@
+/* ===========================================================
+   PA1 - DISENO Y DESARROLLO WEB
+   Archivo de estilos externo: estilo.css
+   =========================================================== */
+
+/* ---------- ESTILOS GENERALES ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    padding: 20px 10px;
+}
+
+/* ---------- CONTENEDOR PRINCIPAL ---------- */
+/* Aqui se coloca la imagen de fondo texturizada */
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 30px 40px 30px;
+    background-image: url(imagenes/fondo.jpg);
+    background-repeat: repeat;
+    border: 1px solid #c9d6e2;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- ENCABEZADO (FLEXBOX) ---------- */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 15px 0px;
+}
+
+/* Imagen del logo con bordes redondeados (circulo) */
+.logo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+    font-size: 40px;
+    color: #00a9e0;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px #ffffff;
+    letter-spacing: 1px;
+}
+
+/* ---------- LINEA DIVISORIA ---------- */
+.linea {
+    border: none;
+    border-top: 2px solid #5a5a5a;
+    margin: 10px 0px;
+}
+
+/* ---------- CAJA DEL AUTOR (FLEXBOX) ---------- */
+.fila-autor {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.autor {
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #333333;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- SECCIONES Y TEXTOS ---------- */
+.seccion {
+    margin-bottom: 30px;
+}
+
+.subtitulo {
+    font-size: 19px;
+    font-style: italic;
+    color: #1a1a1a;
+    text-decoration: underline;
+    margin-bottom: 12px;
+}
+
+.parrafo {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #3a3a3a;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.parrafo em {
+    color: #4a4a4a;
+}
+
+/* ---------- CAJA QUE AGRUPA LAS TARJETAS (FLEXBOX) ---------- */
+.caja-grupo {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+    border: 3px solid #000000;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 15px;
+}
+
+/* ---------- TARJETAS ---------- */
+.tarjeta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #b5b5b5;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Colores de fondo de cada tarjeta */
+.tarjeta-html {
+    background-color: #f7efee;
+}
+
+.tarjeta-css {
+    background-color: #edf2f6;
+}
+
+.tarjeta-js {
+    background-color: #edf0e0;
+}
+
+/* ---------- CABECERAS DE COLOR ---------- */
+.cabecera {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 5px;
+    margin-bottom: 12px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cabecera-html {
+    background-color: #e0452b;
+}
+
+.cabecera-css {
+    background-color: #1267b0;
+}
+
+.cabecera-js {
+    background-color: #75a733;
+}
+
+/* Iconos web dentro de las cabeceras */
+.cabecera i {
+    margin-right: 6px;
+    font-size: 15px;
+}
+
+/* ---------- TEXTOS DE LAS TARJETAS ---------- */
+.texto {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #444444;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.texto-cursiva {
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #444444;
+    margin-bottom: 10px;
+}
+
+/* Resaltado amarillo */
+mark {
+    background-color: #ffff00;
+    color: #444444;
+}
+
+/* ---------- CAJA BLANCA DE LOS LOGOS (FLEXBOX) ---------- */
+.caja-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-top: auto;
+    padding: 10px;
+}
+
+.imagen-logo {
+    width: 75px;
+}
+
+/* ---------- IMAGEN DE LA CASA (FLEXBOX) ---------- */
+.fila-casa {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.caja-casa {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen con bordes redondeados */
+.imagen-casa {
+    display: block;
+    width: 330px;
+    border-radius: 6px;
+}
+
+/* ---------- CAJA DEL RESUMEN ---------- */
+.caja-resumen {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
+}
+
+.texto-resumen {
+    font-size: 14px;
+    font-style: italic;
+    color: #555555;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ---------- AJUSTE PARA PANTALLAS PEQUENAS ---------- */
+@media (max-width: 700px) {
+
+    .encabezado {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .caja-grupo {
+        flex-direction: column;
+    }
+
+    .imagen-casa {
+        width: 100%;
+    }
+}

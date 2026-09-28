@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web - HTML, CSS y JavaScript</title>
+
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Iconos web (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR PRINCIPAL DE LA PAGINA -->
+    <div class="contenedor">
+
+        <!-- ENCABEZADO: logo + titulo -->
+        <header class="encabezado">
+            <img src="imagenes/logo.jpg" alt="Logo ISIL" class="logo">
+            <h1 class="titulo">Desarrollo Web</h1>
+        </header>
+
+        <!-- Linea divisoria -->
+        <hr class="linea">
+
+        <!-- Caja del autor -->
+        <div class="fila-autor">
+            <p class="autor">Desarrollado por Xiomara<sup>2</sup></p>
+        </div>
+
+        <!-- SECCION 1: INTRODUCCION -->
+        <section class="seccion">
+            <h2 class="subtitulo">HTML, CSS y JavaScript:</h2>
+
+            <p class="parrafo">
+                <em>Son los tres pilares fundamentales del desarrollo web</em> que trabajan juntos para
+                crear p&aacute;ginas web din&aacute;micas e interactivas.<br>
+                <strong>HTML</strong> se encarga de la estructura y el contenido, <strong>CSS</strong> del dise&ntilde;o
+                y la presentaci&oacute;n,
+                y <strong>JavaScript</strong> de la interactividad y la funcionalidad.
+            </p>
+        </section>
+
+        <!-- SECCION 2: DEFINICIONES -->
+        <section class="seccion">
+            <h2 class="subtitulo">Definiciones:</h2>
+
+            <!-- Caja con borde negro que agrupa las 3 tarjetas (flexbox) -->
+            <div class="caja-grupo">
+
+                <!-- Tarjeta 1: HTML -->
+                <article class="tarjeta tarjeta-html">
+                    <h3 class="cabecera cabecera-html">HTML (HyperText Markup Language):</h3>
+                    <p class="texto">
+                        Es el lenguaje de marcado que define la <mark>estructura y el contenido</mark> de una
+                        p&aacute;gina web.
+                        Utiliza etiquetas para delimitar diferentes elementos, como p&aacute;rrafos, encabezados,
+                        im&aacute;genes, enlaces, etc.
+                    </p>
+                    <div class="caja-imagen">
+                        <img src="imagenes/html.jpg" alt="Logo de HTML5" class="imagen-logo">
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2: CSS -->
+                <article class="tarjeta tarjeta-css">
+                    <h3 class="cabecera cabecera-css">CSS (Cascading Style Sheets):</h3>
+                    <p class="texto">
+                        Es un lenguaje de estilos que se utiliza para controlar la <mark>presentaci&oacute;n</mark> de
+                        una p&aacute;gina web.
+                        Permite definir aspectos como los colores, fuentes, tama&ntilde;os, m&aacute;rgenes, etc., de los
+                        elementos HTML.
+                    </p>
+                    <div class="caja-imagen">
+                        <img src="imagenes/css.jpg" alt="Logo de CSS3" class="imagen-logo">
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3: JavaScript -->
+                <article class="tarjeta tarjeta-js">
+                    <h3 class="cabecera cabecera-js">JavaScript (Program. Language):</h3>
+                    <p class="texto">
+                        Es un lenguaje de programaci&oacute;n que permite agregar <mark>funcionalidad interactiva</mark>
+                        a una p&aacute;gina web.
+                        Permite manipular elementos HTML, responder a eventos del usuario, realizar c&aacute;lculos, etc.
+                    </p>
+                    <div class="caja-imagen">
+                        <img src="imagenes/js.jpg" alt="Logo de JavaScript" class="imagen-logo">
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECCION 3: ANALOGIA -->
+        <section class="seccion">
+            <h2 class="subtitulo">Analog&iacute;a de la web y una casa:</h2>
+
+            <!-- Caja con borde negro que agrupa las 3 tarjetas (flexbox) -->
+            <div class="caja-grupo">
+
+                <!-- Tarjeta 1: HTML -->
+                <article class="tarjeta tarjeta-html">
+                    <h3 class="cabecera cabecera-html">
+                        <i class="fa-brands fa-html5"></i> HTML
+                    </h3>
+                    <p class="texto-cursiva">Estructura de la casa.</p>
+                    <p class="texto">
+                        Es como los cimientos, las paredes, techos, y distribuci&oacute;n de las habitaciones.
+                    </p>
+                    <p class="texto">
+                        HTML define la estructura b&aacute;sica de una p&aacute;gina web: qu&eacute; elementos hay
+                        (t&iacute;tulo, p&aacute;rrafos, botones, im&aacute;genes, etc.), pero sin preocuparse por
+                        c&oacute;mo se ven.
+                    </p>
+                </article>
+
+                <!-- Tarjeta 2: CSS -->
+                <article class="tarjeta tarjeta-css">
+                    <h3 class="cabecera cabecera-css">
+                        <i class="fa-brands fa-css3-alt"></i> CSS
+                    </h3>
+                    <p class="texto-cursiva">Decoraci&oacute;n y estilo de la casa.</p>
+                    <p class="texto">
+                        Es la pintura de las paredes, el tipo de piso, los muebles, las cortinas, el dise&ntilde;o de la
+                        cocina.
+                    </p>
+                    <p class="texto">
+                        CSS se encarga de c&oacute;mo se ve la p&aacute;gina: colores, fuentes, m&aacute;rgenes,
+                        alineaciones, estilos responsivos... lo visual.
+                    </p>
+                </article>
+
+                <!-- Tarjeta 3: JavaScript -->
+                <article class="tarjeta tarjeta-js">
+                    <h3 class="cabecera cabecera-js">
+                        <i class="fa-brands fa-square-js"></i> JavaScript
+                    </h3>
+                    <p class="texto-cursiva">Los sistemas el&eacute;ctricos y electr&oacute;nicos de la casa.</p>
+                    <p class="texto">
+                        Es como los interruptores que encienden luces, las puertas autom&aacute;ticas, el termostato
+                        inteligente.
+                    </p>
+                    <p class="texto">
+                        JavaScript a&ntilde;ade funcionalidad e interactividad haciendo que pasen cosas como respuesta a
+                        un evento.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- Imagen central de la analogia -->
+            <div class="fila-casa">
+                <div class="caja-casa">
+                    <img src="imagenes/casa2.jpg" alt="Analogia de HTML, CSS y JavaScript con una casa"
+                        class="imagen-casa">
+                </div>
+            </div>
+        </section>
+
+        <!-- Linea divisoria -->
+        <hr class="linea">
+
+        <!-- SECCION 4: RESUMEN -->
+        <section class="seccion">
+            <h2 class="subtitulo">Resumen</h2>
+
+            <div class="caja-resumen">
+                <p class="texto-resumen">
+                    "Los tres lenguajes son esenciales para el desarrollo web, y cada uno juega un papel crucial
+                    en la creaci&oacute;n de p&aacute;ginas web modernas y funcionales."
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
